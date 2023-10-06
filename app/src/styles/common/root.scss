@@ -1,0 +1,39 @@
+$Cormorant: ('Bold', 700), ('Light', 300), ('Regular', 400);
+
+@each $name, $weight in $Cormorant {
+    @font-face {
+        font-family: 'Cormorant';
+        src: url(../fonts/Cormorant/Cormorant-#{$name}.woff2);
+    }
+}
+
+$Cormorant_Upright: ('Bold', 700), ('Light', 300);
+
+@each $name, $weight in $Cormorant_Upright {
+    @font-face {
+        font-family: 'CormorantUpright';
+        src: url(../fonts/Cormorant_Upright/Cormorant_Upright-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}    
+
+$Montserrat: ('Bold', 700), ('ExtraLight', 200), ('Light', 300);
+
+@each $name, $weight in $Montserrat {
+    @font-face {
+        font-family: 'Montserrat';
+        src: url(../fonts/Montserrat/Montserrat-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}    
+
+$Muller: ('Bold', 700), ('ExtraBold', 800), ('Light', 300), ('Regular', 400), ('Thin', 100), ('UltraLight', 250);
+@each $name, $weight in $Muller {
+    @font-face {
+        font-family: 'Muller';
+        src: url(../fonts/Muller/Muller#{$name}.woff2);
+        font-weight: $weight;
+    }
+}
+
+

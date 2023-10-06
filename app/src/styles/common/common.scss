@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muller';
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    @include container();
+}
+
+.btn {
+    border: 2px solid #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    transition: .4s;
+    color: #fff;
+    padding: 20px 0;
+    &:hover {
+        background: #fff;
+        color: #1B1B1B;
+        box-shadow: 0 0 15px #fff;
+        // transform: scale(0.9);
+    }
+}
